@@ -1,0 +1,102 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --main-color: #E8E4E0;
+    --sub-color: #8B674E;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+
+header{
+    background-color: var(--sub-color);
+    color: var(--main-color);
+}
+
+.logo{
+    text-align: center;
+    font-weight: 800;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.how-it-works{
+    text-align: right;
+    cursor: pointer;
+}
+
+.posts-container{
+    width: 100vw;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    color: var(--sub-color);
+    font-weight: 800;
+}
+
+.create-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    color: var(--sub-color);
+}
+
+.create-postBtn{
+    color: #8B674E;
+    background-color: antiquewhite;
+    font-size: 3rem;
+    padding: 1px 15px;
+}
+
+.post{
+    padding: 1rem;
+    border: 1px solid;
+    border-top: 2rem solid;
+    position: relative;
+    width: fit-content;
+}
+
+.post img{
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.post .head{
+    border-bottom: 1px solid;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.post .color-picker{
+    width: 20px;
+    border: none;
+    background:none;
+    padding:0;
+}
+
+.post button{
+    color: var(--sub-color);
+    font-size: 1rem;
+    background-color: transparent;
+    text-decoration: underline;
+    margin-left: 2rem;
+}

@@ -28,6 +28,18 @@ createLinkBtn.addEventListener('click', () =>{
 
 createPostBtn.addEventListener('click', () =>{
     
-    posts.innerHTML += "HIS HET"
+    posts.innerHTML += ` <div class="post">
+    <img src="src/close.svg" alt="close-icon" class="close-btn" id="closeBtn">
+    
+    <div class="content">
+        <h3 class="head">First Linker</h3>
+        <p class="paragraph">my first post! hello world</p>
+    </div>
+
+    <input type="color" class="color-picker" id="colorPicker">
+    <button class="createLink">create a link:</button><br>
+    <a href="" class="linkArea"></a>
+
+</div>`
     
 })

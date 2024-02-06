@@ -23,23 +23,29 @@ createLinkBtn.addEventListener('click', () =>{
     let randomCharacters = charactersSplitter.sort(() => Math.random() - 0.5)
     let finalCharacters = randomCharacters.join('')
 
-    linkArea.innerText = `linker.com/post/${finalCharacters}/`
+    linkArea.innerText = `linker.com/post/${finalCharacters}.com`
 })
 
 createPostBtn.addEventListener('click', () =>{
-    
-    posts.innerHTML += ` <div class="post">
-    <img src="src/close.svg" alt="close-icon" class="close-btn" id="closeBtn">
-    
-    <div class="content">
-        <h3 class="head">First Linker</h3>
-        <p class="paragraph">my first post! hello world</p>
-    </div>
 
-    <input type="color" class="color-picker" id="colorPicker">
-    <button class="createLink">create a link:</button><br>
-    <a href="" class="linkArea"></a>
+    let createPost = document.createElement('div')
+    createPost.classList.add('post')
 
-</div>`
+    posts.append(createPost)
+
+    let heading = prompt('your heading')
     
+    let createHeading = document.createElement('h3')
+    createHeading.classList.add('head')
+    createHeading.textContent = heading
+
+    createPost.append(createHeading)
+
+    let paragraph = prompt('your paragraph')
+
+    let createParagraph = document.createElement('p')
+    createParagraph.classList.add('paragraph')
+    createParagraph.textContent = paragraph
+
+    createPost.append(paragraph)
 })

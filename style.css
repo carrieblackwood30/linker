@@ -42,6 +42,7 @@ header{
 
 .posts{
     display: flex;
+    gap: 2rem;
     flex-wrap: wrap;
     padding: 2rem;
     color: var(--sub-color);

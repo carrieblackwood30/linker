@@ -6,6 +6,8 @@ const colorPicker = document.querySelector('#colorPicker')
 const createLinkBtn = document.querySelector('.createLink')
 const createPostBtn = document.querySelector('#createPostBtn')
 
+const LS = localStorage
+
 closeBtn.addEventListener('click', (event) =>{
     event.stopPropagation()
     post.remove()
@@ -83,4 +85,6 @@ createPostBtn.addEventListener('click', () =>{
     createPost.append(createRandomLinkerBtn)
     createPost.append(createLinkArea)
     createPost.append(createCloseBtn)
+
+    LS.setItem('FormData', JSON.stringify(createPost))
 })

@@ -39,6 +39,7 @@ header{
 
 .posts-container{
     width: 100vw;
+    display: flex;
 }
 
 .posts{
@@ -72,6 +73,7 @@ header{
     border-top: 2rem solid;
     position: relative;
     width: fit-content;
+    height: 10rem;
 }
 
 .post img{

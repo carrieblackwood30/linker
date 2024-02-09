@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
     <script src="script.js" defer></script>
+    <script src="members.js" defer></script>
 </head>
 <body>
     
@@ -14,14 +16,46 @@
         <h3 class="how-it-works">how it works?</h3>
         <h3 class="logo">Linker</h3>
 
+        <div class="reg">
+            <button class="registration">+</button>
+        </div>
     </header>
+
+    <div class="create-post">
+        <h3>create a post:</h3>
+    <button class="create-postBtn" id="createPostBtn">+</button>
+    </div>
 
     <section class="posts-container">
 
-        <div class="create-post">
-            <h3>create a post:</h3>
-        <button class="create-postBtn" id="createPostBtn">+</button>
+        
+        <div class="sidebar">
+
+            <div class="onlineMembers" id="onlineMembers">
+                <h3 class="online-linkers" id="onlineLinkers">online linkers</h3>
+
+                <div class="onlineMembersList">
+                    <div class="member" id="member">
+                        <div class="member-img" id="memberImg">
+                            <img src="https://i.imgflip.com/1qd3cg.jpg" alt="linkersImg" id="member" class="MemberImg" width="50">
+                            <h4 class="MembersName" id="MembersName">Sheldon Cooper</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="membership">
+                <h3 class="membershipTitle">membership</h3>
+                <button class="createMembershipBtn">+</button>
+            </div>
+            
+            <div class="create-group">
+                <h3>create a group</h3>
+                <button class="createGroup">+</button>
+            </div>
         </div>
+
 
         <div class="posts">
             <div class="post">
